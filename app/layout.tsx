@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${interSans.variable} ${geistMono.variable} antialiased`}
+        className={`${interSans.variable} ${geistMono.variable} antialiased `}
       >
         <NextIntlClientProvider>
           <Navbar/>

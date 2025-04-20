@@ -5,12 +5,12 @@ import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTr
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-[var(--white)] w-screen">
+    <nav className="bg-[var(--white)] w-screen shadow-2xl">
       <div className="mx-auto w-4/5 py-4 flex justify-between items-center">
         <Link href="/" className="text-[var(--black)] text-2xl md:text-3xl ">
           InfoLand
         </Link>
-        <ul className=" hidden md:flex items-center gap-4">
+        <ul className=" hidden md:flex items-center gap-4 text-[var(--black)]">
           <li><Link href={"/"}>Home</Link></li>
           <li><Link href={"/"}>Blogs</Link></li>
           <li><Link href={"/"}>Questions</Link></li>
@@ -25,9 +25,8 @@ const Navbar: React.FC = () => {
           </SheetTrigger>
           <SheetContent className="bg-white">
             <SheetHeader>
-              <SheetTitle></SheetTitle>
               <SheetDescription>
-                <ul className="flex flex-col gap-4">
+                <ul className="flex flex-col gap-4 mt-5">
                   <li><Link href={"/"}>Home</Link></li>
                   <li><Link href={"/"}>Blogs</Link></li>
                   <li><Link href={"/"}>Questions</Link></li>
@@ -36,8 +35,6 @@ const Navbar: React.FC = () => {
             </SheetHeader>
           </SheetContent>
         </Sheet>
-
-
       </div>
     </nav>
   );
