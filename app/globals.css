@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-.light {
+:root{
   --white: #fff;
   --black: #000;
   --red: #ff0000;
@@ -13,12 +13,12 @@
   --red: red;
 }
 
-@theme {
-  --myWhite: var(--white);
-  --black: var(--black);
-  --red: var(--red);
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face{
+  font-family:"Roboto";
+  src:url("/public/fonts/RobotoCondensed-VariableFont_wght.ttf") format("truetype");
+  font-wight:500;
 }
