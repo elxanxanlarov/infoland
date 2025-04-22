@@ -4,13 +4,13 @@
 :root{
   --white: #fff;
   --black: #000;
-  --red: #ff0000;
+  --blue: blue;
 }
 
 .dark {
   --white: #000;
   --black: #fff;
-  --red: red;
+  --blue: blue;
 }
 
 body {
@@ -21,4 +21,12 @@ body {
   font-family:"Roboto";
   src:url("/public/fonts/RobotoCondensed-VariableFont_wght.ttf") format("truetype");
   font-wight:500;
+}
+
+.bg-\[var\(--blue\)\] {
+  background-color: var(--blue);
+}
+/* Remove or fix this invalid rule */
+.bg-\[var\(\)\] {
+  /* background-color: var(); */ /* <-- Remove or correct this line */
 }

@@ -11,7 +11,7 @@ import {
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-[var(--white)] w-screen shadow-2xl">
+    <nav className="bg-[var(--white)] w-screen shadow-2xl z-10 fixed">
       <div className="mx-auto w-4/5 py-4 flex justify-between items-center">
         <Link href="/" className="text-[var(--black)] text-2xl md:text-3xl ">
           InfoLand
